@@ -2,4 +2,48 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
+}
+
+#card{
+    border: solid 2px black;
+}
+
+.container{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+}
+
+.b-card{
+    width: 100%;
+    height: 100%;
+    transition: transform .7s ease-in-out;
+    transform-style: preserve-3d;
+}
+.container:hover .b-card{
+    transform: rotateY(180deg);
+}
+.b-card figure{    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0rem .5rem;
+}
+
+.front{
+    background-image: url(/resources/myPic2.WebP);
+    background-size: cover;
+    color: rgb(253, 215, 215);    
+}
+
+.back{
+    background-image: url(/resources/seo.jpg);
+    background-size: cover;
+    transform: rotateY(180deg);
+    color: rgb(197, 209, 129);
 }
